@@ -71,14 +71,14 @@ gaussY = 1/(numpy.sqrt(2*numpy.pi*sigmaY**2))*numpy.exp(-(y-muY)**2/(2*sigmaY**2
 correlacion=0
 for a in range (0, len(x)):
   for b in range (0, len(y)):
-    correlacion += x[a] * y[b] * matriz_num [a][b]
+    correlacion = correlacion + (x[a] * y[b] * matriz_num [a][b])
 print ("Correlación =", correlacion)
 
 #Covarianza 
 covarianza=0
 for c in range (0, len(x)):
   for d in range (0, len(y)):
-    covarianza += (x[a] - muX) * (y[b] - muY) * matriz_num [a][b]
+    covarianza = covarianza + ((x[c] - muX) * (y[d] - muY) * matriz_num [c][d])
 print ("Covarianza =", covarianza)
 
 #Coeficiente de correlación (Pearson)
@@ -90,8 +90,8 @@ for o in range (0, len(x)):
     sigx += numpy.sqrt ((x[o] - muX)**2 * matriz_num [o][p])
 
 for h in range (0, len(x)):
-  for j in range (0, len(y)):
-    sigy += numpy.sqrt ((y[j] - muY)**2 * matriz_num [h][j])
+  for z in range (0, len(y)):
+    sigy += numpy.sqrt ((y[z] - muY)**2 * matriz_num [h][z])
 
 pearson = covarianza/(sigx*sigy)
 print ("Coeficiente de correlacion =", pearson)
