@@ -39,8 +39,6 @@ Por lo tanto, usando el modelo de curva de ajuste, la función de densidad conju
 
 -Coeficiente de correlación: Este es un número adimensional cuya valor está entre -1 y 1. Determina la fuerza de la relación lineal entre las variables aleatorias, es decir, el grado en que las variables están relacionadas linealmente [1].
 
-En este caso, tanto la covarianza como el coeficiente de correlación son muy cercanos a cero, por lo tanto, esto demuestra que las variables son prácticamente independientes. 
-
 4. Gráficas de las funciones de densidad marginales (2D) y la función de densidad conjunta (3D).
 
 A continuación se muestra la gráfica de densidad marginal de la variable x con su respectiva curva de ajuste (Gaussiana).
