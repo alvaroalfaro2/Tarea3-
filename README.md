@@ -33,9 +33,13 @@ Por lo tanto, usando el modelo de curva de ajuste, la función de densidad conju
 | Covarianza | 0,0669  |
 | Coeficiente de correlación  | 0,000025422  |
 
+-Correlación: Indica el grado de asociación entre las variables.
+
 -Covarianza: Esta mide la relación o dependencia entre las variables aleatorias, mide la fuerza de la relación lineal entre X e Y. Si es positivo significa que las variables aumentan simultáneamente, si es negativo significa que mientras una variable aumenta la otra disminuye y si es cero significa que las variables son independientes [1]. 
 
 -Coeficiente de correlación: Este es un número adimensional cuya valor está entre -1 y 1. Determina la fuerza de la relación lineal entre las variables aleatorias, es decir, el grado en que las variables están relacionadas linealmente [1].
+
+En este caso, tanto la covarianza como el coeficiente de correlación son muy cercanos a cero, por lo tanto, esto demuestra que las variables son prácticamente independientes. 
 
 4. Gráficas de las funciones de densidad marginales (2D) y la función de densidad conjunta (3D).
 
