@@ -20,6 +20,8 @@ Cuando existe independencia entre las variables, la función de densidad conjunt
 
 fx,y(x,y) = fx(x)fy(y)
 
+Es decir, la función de densidad conjunta es la multiplicación de las funciones de densidad marginales de X y Y.
+
 3. Hallar los valores de correlación, covarianza y coeficiente de correlación (Pearson) para los datos y explicar su significado.
 
 | Propiedad | Valor |
