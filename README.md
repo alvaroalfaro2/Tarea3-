@@ -16,6 +16,9 @@ Al graficar los valores para la Función de Densidad Marginal (FDM) tanto de X c
 
 2. Asumiendo independencia de X y Y.¿Cuál es la expresión de la función de densidad conjunta que modela los datos?
 
+Cuando existe independencia entre las variables, la función de densidad conjunta está dada por:
+
+fx,y(x,y) = fx(x)fy(y)
 
 3. Hallar los valores de correlación, covarianza y coeficiente de correlación (Pearson) para los datos y explicar su significado.
 
