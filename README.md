@@ -30,8 +30,8 @@ Por lo tanto, usando el modelo de curva de ajuste, la función de densidad conju
 | Propiedad | Valor |
 | ------ | ---- |
 | Correlación  | 149,54281     |
-| Covarianza | 33,3942  |
-| Coeficiente de correlación  | 0,01273  |
+| Covarianza | 0,0669  |
+| Coeficiente de correlación  | 0,000025422  |
 
 -Covarianza: Esta mide la relación o dependencia entre las variables aleatorias, mide la fuerza de la relación lineal entre X e Y. Si es positivo significa que las variables aumentan simultáneamente, si es negativo significa que mientras una variable aumenta la otra disminuye y si es cero significa que las variables son independientes [1]. 
 
