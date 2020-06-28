@@ -91,7 +91,7 @@ for o in range (0, len(x)):
 
 for h in range (0, len(x)):
   for j in range (0, len(y)):
-    sigy += numpy.sqrt ((x[h] - muX)**2 * matriz_num [h][j])
+    sigy += numpy.sqrt ((y[j] - muY)**2 * matriz_num [h][j])
 
 pearson = covarianza/(sigx*sigy)
 print ("Coeficiente de correlacion =", pearson)
