@@ -81,25 +81,42 @@ for c in range (0, len(x)):
     covarianza += (x[a] - muX) * (y[b] - muY) * matriz_num [a][b]
 print ("Covarianza =", covarianza)
 
-fig=plt.figure()
-ax=fig.add_subplot(111, projection='3d')
+#Coeficiente de correlación (Pearson)
+person=0
+sigx=0  #Momento central de segundo orden x
+sigy=0  #Momento central de segundo orden x
+for o in range (0, len(x)):
+  for p in range (0, len(y)):
+    sigx += numpy.sqrt ((x[o] - muX)**2 * matriz_num [o][p])
 
-s=[1,3,5,6,3,6,5]
-d=[1,2,3,6,7,4]
-k=[1,2,5,5,4,4,4]
+for h in range (0, len(x)):
+  for j in range (0, len(y)):
+    sigy += numpy.sqrt ((x[h] - muX)**2 * matriz_num [h][j])
+
+pearson = covarianza/(sigx*sigy)
+print ("Coeficiente de correlacion =", pearson)
+
+
+#Graficas
+#Funcion de densidad marginal de X con curva de ajuste
+plt.plot (x, gaussX, 'r--', label='Curva de ajuste X')
+plt.plot (x, fx, label='FDM de X') #FDM: funcion de densidad marginal
+plt.xlabel("x")   
+plt.ylabel("fx(X)") 
+plt.legend(loc="upper right")
+#Funcion de densidad marginal de Y con curva de ajuste
+plt.plot (y, gaussY, 'r--', label='Curva de ajuste Y')
+plt.plot (y, fy, label='FDM de Y') #FDM: funcion de densidad marginal
+plt.xlabel("y")   
+plt.ylabel("fy(Y)") 
+plt.legend(loc="upper right")
+
+#Funcion de densidad conjunta
+fig = plt.figure()
+ax = plt.axes(projection='3d')
 
 for q in range (0, len(x)):
   for w in range (0, len(y)):
     ax.scatter(x[q], y[w], matriz_num[q][w])
 
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_zlabel('fx,y(x,y)')
-
-plt.plot (y, gaussY, 'r--', label='Curva de ajuste')
-
-plt.plot (y, fy, label='FDM de X') #FDM: funcion de densidad marginal
-plt.xlabel("x")   
-plt.ylabel("fx(X)") 
-plt.legend(loc="upper right") 
 plt.show()
