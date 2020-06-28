@@ -21,7 +21,7 @@ Cuando existe independencia entre las variables, la función de densidad conjunt
 fx,y(x,y) = fx(x)fy(y)
 
 Es decir, la función de densidad conjunta es la multiplicación de las funciones de densidad marginales de X y Y.
-Por lo tanto, la función de densidad conjunta sería: 
+Por lo tanto, usando el modelo de curva de ajuste, la función de densidad conjunta sería: 
 
 ![funcionconjunta](funcionconjunta.JPG)
 
@@ -31,8 +31,11 @@ Por lo tanto, la función de densidad conjunta sería:
 | ------ | ---- |
 | Correlación  | 149,54281     |
 | Covarianza | 33,3942  |
-| Coeficiente de correlación  | 4  |
+| Coeficiente de correlación  | 0,02414  |
 
+-Covarianza: Esta mide la relación o dependencia entre las variables aleatorias, mide la fuerza de la relación lineal entre X e Y. Si es positivo significa que las variables aumentan simultáneamente, si es negativo significa que mientras una variable aumenta la otra disminuye y si es cero significa que las variables son independientes [1]. 
+
+-Coeficiente de correlación: Este es un número adimensional cuya valor está entre -1 y 1. Determina la fuerza de la relación lineal entre las variables aleatorias, es decir, el grado en que las variables están relacionadas linealmente [1].
 
 4. Gráficas de las funciones de densidad marginales (2D) y la función de densidad conjunta (3D).
 
@@ -44,3 +47,8 @@ A continuación se muestra la gráfica de densidad marginal de la variable y con
 
 La siguiente figura muestra la gráfica de la función de densidad conjunta.
 ![3d](3d.png)
+
+
+Referencias
+
+[1] S. de la Fuente Fernandez, “Variables aleatorias bidimensionales,” Universidad Autonoma de Madrid.
