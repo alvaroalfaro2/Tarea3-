@@ -26,6 +26,13 @@ Al graficar los valores para la Función de Densidad Marginal (FDM) tanto de X c
 | Coeficiente de correlación  | 4  |
 
 
+4. Gráficas de las funciones de densidad marginales (2D) y la función de densidad conjunta (3D).
+
+A continuación se muestra la gráfica de densidad marginal de la variable x con su respectiva curva de ajuste (Gaussiana).
 ![x](x.png)
+
+A continuación se muestra la gráfica de densidad marginal de la variable y con su respectiva curva de ajuste (Gaussiana).
 ![y](y.png)
+
+La siguiente figura muestra la gráfica de la función de densidad conjunta.
 ![3d](3d.png)
